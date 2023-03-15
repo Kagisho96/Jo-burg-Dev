@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo'burg Dev 2</title>
+    <link rel="stylesheet" href=".\style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="live">
+      <h1>LIVE PAGE</h1>
+      <p>A two-tracked conference on the latest HTML5 developments</p>
+      <hr>
+    </div>
+
+    <h2>Attending the conference right now? Get involved!</h2>
+
+    <div class="column">
+        <label>Ask a question: </label>
+
+        <input type="text" id="question" > 
+
+        <button id="askbutton" type="button" ondblclick="Ask()">Ask</button>
+        
+    </div>
+
+    </div>
+        <ul id="livelist">
+            <li>What are some good resources for getting started with HTML5? <a href='link'>Report</a></li>
+            <li>Can you explain more about the Web Socket API please? <a href='link'>Report</a></li>
+            <li>How much of CSS3 can I use right now? <a href='link'>Report</a></li>
+        </ul>
+    </div>
+    <div>
+    <div class="dropdown">
+            <button id="myBtn" class="dropbtn">More questions</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a id="Quiz"></a>
+              <a href="#">How much of CSS3 can I use right now?</a>
+              <a href="#">How much of CSS3 can I use right now?</a>
+            </div>
+    </div>
+ 
+
+    <script type="text/javascript">
+
+        document.getElementById("myBtn").onclick = function() {myFunction()};
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function Ask() {
+          var PastQuiz = document.getElementById("question").value;
+
+          document.getElementById("Quiz").innerHTML = PastQuiz;
+
+          document.getElementById("askbutton").innerHTML = "Accepted";
+
+          alert("Quiz Recieved");
+        }
+
+    </script>
+
+</body>
+</html  

@@ -1,0 +1,177 @@
+
+
+  body {
+    text-align: center;
+    color: rgb(63, 66, 63);
+    background-color: cornsilk;
+    margin:auto 
+}
+/* About page******************************************************** */
+.about {
+    text-align: start;
+    font-family: 'Black Han Sans', sans-serif;  
+}
+
+.paragraph {
+    -webkit-columns: 40px 2;
+    -moz-columns: 60px 2;
+    columns: 60px 2;
+}
+
+
+/* Live page******************************************************** */
+
+.live {
+    
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    color: rgb(42, 43, 41); 
+    margin-bottom: 60px;
+    margin-top: 40px;
+     
+}
+#livelist li{
+    list-style: none;
+}
+#livelist li a{
+    text-decoration: none;
+    color: #606660;
+}
+hr {
+    color: rgb(17, 16, 16);
+    margin-top: 40px;
+    line-height: 1.1em;
+}
+
+h2 {
+    color: rgb(17, 16, 16);
+    margin-bottom: 50px;
+}
+
+.column {
+    box-sizing: border-box;
+}
+.column label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.dropbtn {
+    background-color: #2b2e2b;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #606660;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #745858;
+}
+  
+.show {
+    display:block;
+}
+
+#question{
+    height: 1.5rem;
+    width: 20rem;
+    font-size: 15px;
+}
+#askbutton{
+    height: 1.85rem;
+    cursor: pointer;
+}
+#askbutton:hover{
+    background: yellowgreen;
+}
+
+/* Event page******************************************************** */
+     
+#event {
+    font-family: 'Black Han Sans', sans-serif; 
+    padding: 20px;
+    width: 50%;  
+} 
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin-left: 0%;
+    margin-top: 2%;
+    
+}
+ 
+ 
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;border: 3px solid #131212;
+}
+ 
+.slide-wrapper {
+    width: calc(728px * 4);
+    animation: slide 20s ease infinite;
+}
+.slide-number {
+    background: rgb(243, 239, 239);
+    font-family: 'Black Han Sans', sans-serif; 
+}
+ 
+
+ 
+.slide:nth-child(1) {
+    background: rgb(47, 48, 47);
+}
+ 
+.slide:nth-child(2) {
+    background: rgb(47, 48, 47);
+}
+ 
+.slide:nth-child(3) {
+    background: rgb(47, 48, 47);
+}
+ 
+.slide:nth-child(4) {
+    background: rgb(47, 48, 47);
+}
+ 
+ 
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
